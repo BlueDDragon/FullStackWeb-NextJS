@@ -1,0 +1,122 @@
+[
+  {
+    "id": 10,
+    "productName": "대동트랙터",
+    "description": "대동트랙터47마력.D470\n2010년식 면세유떼어봐야함\n.2700시간.앞.뒤.타이어새것",
+    "price": 10000000,
+    "userName": "wizard",
+    "photo": "tr1778071862079.jpeg",
+    "createdAt": "2026-05-06T12:51:02.126Z",
+    "updatedAt": "2026-05-06T12:51:02.126Z",
+    "deletedAt": null,
+    "userID": null
+  },
+  {
+    "id": 9,
+    "productName": "LG휘센 벽걸이 에어컨",
+    "description": "19년도에 구매해서 사용하다 25년 10월에 이사후 필요없어서 판매합니다\n실내기 벽에서 떼서 분리해두었고 실외기도 분리해서 보관중입니다",
+    "price": 300000,
+    "userName": "wizard",
+    "photo": "air1778071782172.jpeg",
+    "createdAt": "2026-05-06T12:49:42.202Z",
+    "updatedAt": "2026-05-06T12:49:42.202Z",
+    "deletedAt": null,
+    "userID": null
+  },
+  {
+    "id": 8,
+    "productName": "갤럭시탭 S9FE 5G",
+    "description": "갤럭시 탭 S9 FE 5G 모델이에요\n펜 포함 구성이고, 사진에서 보시는 것처럼 깔끔한 상태를 유지하고 있어요",
+    "price": 650000,
+    "userName": "wizard",
+    "photo": "gal1778071644927.jpeg",
+    "createdAt": "2026-05-06T12:47:24.955Z",
+    "updatedAt": "2026-05-06T12:47:24.955Z",
+    "deletedAt": null,
+    "userID": null
+  },
+  {
+    "id": 7,
+    "productName": "지포스 RTX 5090 그래픽카드",
+    "description": "지포스 RTX 5090 화이트 에디션 그래픽카드입니다. 박스와 본체 모두 깨끗한 상태로 보관되어 있어요. 고성능 게이밍과 작업용으로 완벽한 제품입니다.",
+    "price": 6000000,
+    "userName": "wizard",
+    "photo": "gpu1778071571976.jpeg",
+    "createdAt": "2026-05-06T12:46:12.002Z",
+    "updatedAt": "2026-05-06T12:46:12.002Z",
+    "deletedAt": null,
+    "userID": null
+  },
+  {
+    "id": 6,
+    "productName": "아이폰7 128GB 매트블랙 ",
+    "description": "아이폰6 아이폰6플러스(6+) 아이폰6S 6S플러스(6S+) 아이폰7 아이폰7플러스(7+)",
+    "price": 125000,
+    "userName": "wizard",
+    "photo": "iphone1778071486044.jpeg",
+    "createdAt": "2026-05-06T12:44:46.086Z",
+    "updatedAt": "2026-05-06T12:44:46.086Z",
+    "deletedAt": null,
+    "userID": null
+  },
+  {
+    "id": 5,
+    "productName": "2-in-1 태블릿 PC",
+    "description": "3월구매해서 업무용 사용하다 외근이 없어져서 한달은 보관만하다 판매합니다",
+    "price": 1000000,
+    "userName": "wizard",
+    "photo": "tab1778071396545.jpeg",
+    "createdAt": "2026-05-06T12:43:16.595Z",
+    "updatedAt": "2026-05-06T12:43:16.595Z",
+    "deletedAt": null,
+    "userID": null
+  },
+  {
+    "id": 4,
+    "productName": "나이키 25L 백팩 가방",
+    "description": "나이키 25L 백팩 완전 새상품입니다. 검정색 바탕에 흰색 나이키 로고가 포인트로 들어가 있습니다. 가볍고 수납 공간도 넉넉해서 학생분들이나 직장인분들 모두에게 추천드려요! 문의 없으시면 바로 안전결제해주시면 됩니다!",
+    "price": 29000,
+    "userName": "wizard",
+    "photo": "backpack1778071317658.jpeg",
+    "createdAt": "2026-05-06T12:41:57.751Z",
+    "updatedAt": "2026-05-06T12:41:57.751Z",
+    "deletedAt": null,
+    "userID": null
+  },
+  {
+    "id": 3,
+    "productName": "제미나이 재미나이 gemini 프로 1년 구독",
+    "description": "새상품",
+    "price": 19000,
+    "userName": "wizard",
+    "photo": "gemini1778071137108.jpeg",
+    "createdAt": "2026-05-06T12:38:57.190Z",
+    "updatedAt": "2026-05-06T12:38:57.190Z",
+    "deletedAt": null,
+    "userID": null
+  },
+  {
+    "id": 2,
+    "productName": "아메리칸와플기계",
+    "description": "태양산업 아메리칸와플기계2구 1구 판매 합니다\n거의사용안한 최상급\n두종류 입니다\n2구 280,000\n1구 200,000",
+    "price": 280000,
+    "userName": "wizard",
+    "photo": "waffle1778071059342.jpeg",
+    "createdAt": "2026-05-06T12:37:39.391Z",
+    "updatedAt": "2026-05-06T12:37:39.391Z",
+    "deletedAt": null,
+    "userID": null
+  },
+  {
+    "id": 1,
+    "productName": "LG 그램15 사무용 노트북 i5 10세대 16램 SSD 513GB",
+    "description": "15.6인치\ni5 10세대\n16램\nSSD 512GB\nWIN11 PRO 기본탑재모델\n사용감은조금있으나 전체적으로 깔끔합니다!\n속도 빠름!\n정품 한글,오피스 설치했습니다!!!\n[출처] LG 그램15 사무용 노트북 i5 10세대 16램 SSD 513GB (중고나라) | 작성자 당근맛없쩌",
+    "price": 440000,
+    "userName": "wizard",
+    "photo": "lg-gram1778070950784.jpeg",
+    "createdAt": "2026-05-06T12:35:50.849Z",
+    "updatedAt": "2026-05-06T12:35:50.849Z",
+    "deletedAt": null,
+    "userID": null
+  }
+]
