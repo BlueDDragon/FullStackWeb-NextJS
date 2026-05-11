@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  gap: 15px;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  color: black;
+  text-decoration: none;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.description {
+  word-break: keep-all;
+}
+
+.price {
+  color: red;
+}

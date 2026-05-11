@@ -27,7 +27,7 @@ export async function getStaticProps(context: GetStaticPropsContext) {
     const id = context.params!.id; // ! : optional 속성에 강제 래핑
     const sales = await fetchSaleById(parseInt(id as string));
 
-    return { props: { sales: sales }, revalidate: 10 }; // 증분생성(10초마다)
+    return { props: { sales: sales }, revalidate: 10 }; // ISR, 증분 정적 페이지 재생성(10초마다)
 }
 
 export default function Page({sales}: InferGetServerSidePropsType<typeof getStaticProps>) {
