@@ -1,8 +1,9 @@
 import Link from "next/link";
+import style from "@/styles/global-layout.module.css"
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
     return (
-        <div>
+        <div className={style.container}>
             <header>
                 <Link href={'/'}>Home</Link>
             </header>

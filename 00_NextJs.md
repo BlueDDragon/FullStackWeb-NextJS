@@ -22,6 +22,13 @@
         1. 사용자 > 브라우저 : 페이지 이동 요청
         2. 브라우저 : js 실행(컴포넌트 교체)
         3. 브라우저 > 사용자 : 페이지 교체, 리렌더링
+    - SSG : 정적 사이트 생성, 미리 화면을 생성하는 것
+        - 빌드 타임
+        1. 프론트서버 > 백서버 : JS 실행 > API 요청
+        2. 백서버 > 프론트서버 : API 응답 > JS 실행
+        3. 사용자 > 프론트서버 : 초기 접속 요청
+        4. 프론트서버 > 브라우저 : 완성된 HTML 반환
+        5. 브라우저 > 사용자 : 화면 렌더(FCP)
 - SEO(Search Engine Optimization, 검색 엔진 최적화) 및 초기 로딩 성능에 유리
 - 파일(Page)/폴더(App) 기반 자동 라우팅 시스템 제공
 - 리액트로 실제 서비스를 만들 때 가장 많이 사용하는 프레임워크
@@ -29,6 +36,7 @@
 
 ### Pages Router vs App Router
 - Pages Router(pages/)
+    - 기본이 브라우저에서 작동
     - 사용 버전 : Next.js 12 이하, Next.js 13에서 지원
     - 라우팅 방식 : 파일 기반(index.jsx)
     - 서버 컴포넌트 : 지원 안됨
@@ -37,6 +45,7 @@
     - 동적 라우팅 : pages/blog/[id].jsx
     - 데이터 패칭 : getServerSideProps, getStaticProps
 - App Router (app/)
+    - 기본이 서버에서 작동
     - 사용 버전 : Next.js 13+ 추천
     - 라우팅 방식 : 디렉토리+ 파일 기반(pages.jsx)
     - 서버 컴포넌트 : 기본 지원
@@ -59,7 +68,27 @@
     - /post/1/2 : ["1", "2"]
     - 핵심 요약 : 세그먼트가 없어도 매칭됨 (선택적)
 
-    ### 페이지 단위로 번들 분할
-    - js bundle의 크기가 커질 때 페이지 단위로 번들을 분할
-    - 프리페칭 : 현재 페이지에서 이동 가능한 js bundle을 미리 불러옴
-        - Link 컴포넌트를 사용하면 해당 라우터를 프리페칭함
+### 페이지 단위로 번들 분할
+- js bundle의 크기가 커질 때 페이지 단위로 번들을 분할
+- 프리페칭 : 현재 페이지에서 이동 가능한 js bundle을 미리 불러옴
+    - Link 컴포넌트를 사용하면 해당 라우터를 프리페칭함
+
+### Data Fetching
+- 서버사이트 렌더링을 사용
+    1. 사용자 > 프론트서버 : 초기 접속 요청
+    2. 프론트서버 > 백서버 : JS 실행 > API 요청
+    3. 백서버 > 프론트서버 : API 응답 > JS 실행
+    4. 프론트서버 > 브라우저 : 완성된 HTML 반환
+    5. 브라우저 > 사용자 : 화면 렌더링(FCP)
+- ```export async function getServerSideProps()``` : 서버에서 받은 Data를 Props로 반환
+- ```InferGetServerSidePropsType<typeof getServerSideProps>``` : Props 타입 추론
+- 서버 함수라서 브라우저 함수를 사용할 수 없음(ex. useRouter 등) : ```context: GetServerSidePropsContext``` 사용
+
+### 타입 고정
+- ```{value} as {string}```
+- ```q as string```
+
+### 명령어
+- npm run dev / npm run build / npm run start
+- npm run dev -- --port 3000
+- npx kill-port 3000

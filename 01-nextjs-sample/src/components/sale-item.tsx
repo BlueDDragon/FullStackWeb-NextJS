@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import style from "../styles/sale-item.module.css"
+import style from "@/styles/sale-item.module.css"
 import type { SaleData } from "@/types/SaleData";
 
 type SaleItemProps = {
@@ -9,11 +9,12 @@ type SaleItemProps = {
 
 export default function SaleItem({ item }: SaleItemProps) {
     const { id, productName, description, price, userName, photo } = item;
-    const imageURL = `https://styangpa.blob.core.windows.net/yangpa/${photo}`;
+    const imageURL = `${process.env.NEXT_PUBLIC_IMAGE_URL}/${photo}`;
+    console.log(imageURL);
 
     return (
         <Link className={style.container} href={`/sale/${id}`}>
-            <Image className={style.image} src={imageURL} alt={`${productName}의 사진`} width={100} height={100}/>
+            <Image className={style.image} src={imageURL} width={100} height={100} alt={`${productName}.pic`}/>
             <div>
                 <div className={style.title}>{productName}</div>
                 <div className={style.description}>{description}</div>
