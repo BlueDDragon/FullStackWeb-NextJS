@@ -10,7 +10,6 @@ type SaleItemProps = {
 export default function SaleItem({ item }: SaleItemProps) {
     const { id, productName, description, price, userName, photo } = item;
     const imageURL = `${process.env.NEXT_PUBLIC_IMAGE_URL}/${photo}`;
-    console.log(imageURL);
 
     return (
         <Link className={style.container} href={`/sale/${id}`}>

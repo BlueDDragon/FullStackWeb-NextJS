@@ -1,16 +1,19 @@
-import "./globals.css";
+import "@/app/globals.css"
+import style from "@/app/global-layout.module.css"
 import Link from "next/link";
 
-export default function RootLayout({ children, }: Readonly<{children: React.ReactNode;}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <header>
-        <Link href={'/'}>Home</Link> &nbsp;&nbsp;
-        <Link href={'/search'}>Search</Link> &nbsp;&nbsp;
-        <Link href={'/search/setting'}>Setting</Link> &nbsp;&nbsp;
-        <Link href={'/sale/1'}>Sale</Link> &nbsp;&nbsp;
-      </header>
-      <body>{children}</body>
+      <body className={style.container}>
+        <header>
+          <Link href={"/"}>Home</Link>
+        </header>
+        <main>{children}</main>
+        <footer>
+          <p>양파마켓: 010-1234-5678</p>
+        </footer>
+      </body>
     </html>
   );
 }
